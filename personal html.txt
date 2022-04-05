@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="joel21307504 css.css">
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body class="BG">
+<div class="container">
+    <h1 class="neonText">
+    </h1>
+    <h2 class=".neonText">Joel Sherin</h2> 
+
+ </div>
+ <body>
+  
+  <span class="hovertext1" data-hover="I usually spend my leisure time playing basketball or badminton. I have a pet dog named Simba and spending time with him is one of my favourite things to do. I also love to travel and I often plan trips with my family. I also enjoy breaking things down and trying to learn the parts and try to fix them back together.">
+    My Hobbies & Intrest
+   </span>
+   <span class="hovertext2" data-hover="what did one traffic light say to the other............. stop looking,i'm changing&#128514&#128514">
+   Joke
+   </span>
+  <form method="get" action="https://www.youtube.com/embed/47ibFGy-w18?autoplay=1&controls=">
+    <button type="submit">Click here</button>
+</form>
+<img src="https://i1.wp.com/puppytoob.com/wp-content/uploads/2017/03/Rottweiler-Training.jpg?resize=750%2C458&ssl=1" alt="Trulli" width="200" height="150">
+<h4>My dog Simba</h4>
+<div class="footer">
+  <p>&copy joel sherin mani- 21307504</p>
+</div>
+</body>
+</html>

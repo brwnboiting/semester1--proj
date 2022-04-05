@@ -1,0 +1,173 @@
+body {
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210510/pngtree-party-neon-cool-blue-light-background-image_712837.jpg');
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+        background-size: 100% 100%;
+        
+    }
+    .neonText {
+      color: rgb(169, 223, 169);
+      text-shadow:
+          0 0 7px rgb(46, 181, 235),
+          0 0 10px rgb(46, 181, 235),
+          0 0 21px rgb(46, 181, 235),
+          0 0 42px rgb(46, 181, 235),
+          0 0 82px rgb(174, 20, 221),
+          0 0 92px rgb(174, 20, 221),
+          0 0 102px rgb(174, 20, 221),
+          0 0 151px rgb(174, 20, 221);
+    }
+    
+    h2 {
+      font-size: 4.2rem;
+      animation: flicker 1.5s infinite alternate;     
+    }
+    /* Flickering animation */
+    @keyframes flicker {
+        
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+          text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #0fa,
+          0 0 80px #0fa,
+          0 0 90px #0fa,
+          0 0 100px #0fa,
+          0 0 150px #0fa;
+      
+      }
+      
+      20%, 24%, 55% {        
+          text-shadow: none;
+      }    
+    }
+    /* Additional styling */
+    body.BG {
+      font-size: 40px;
+      font-family: "solid italic";
+      background-color: #ca68d3;
+      text-align: center;
+      
+    }  
+    
+  
+h2 {
+  color:rgb(29, 174, 231);
+  text-align: center;
+  margin-top: 3cm;
+  font-size: 100px;
+  font-family:"cursive";
+  font-style:italic;
+}
+p{
+  color: darkgoldenrod;
+  margin-top: 1cm;
+  font-size: 1.5cm;
+}
+
+.hovertext1 {
+  position:absolute;
+  top:50%;
+  left:40%;
+    border-bottom: 5px dotted rgb(214, 236, 9);
+  color:white
+}
+
+.hovertext1:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width:10cm;
+  color: rgb(207, 164, 20);
+  text-align:center;
+  border-radius: 20px;
+  background-color: black;
+  padding: 5px ;
+  text-align:justify;
+  transition: opacity 1s ease-in-out;
+ font-size: 0.5cm;
+  position: absolute;
+  z-index:1;
+  left: 0;
+  top: 110%;
+}
+.hovertext1:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hovertext2 {
+  position: relative;
+  border-bottom: 5px dotted rgb(214, 236, 9);
+  color:white
+}
+
+.hovertext2:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width:10cm;
+  color: rgb(207, 164, 20);
+  text-align:center;
+  border-radius: 20px;
+  background-color: black;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+ font-size: 0.5cm;
+  position: absolute;
+  z-index:1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext2:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  left: 70%;
+ top: 50%;
+ position:absolute;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translate(4px);
+}
+
+img{ top: 34%;
+left: 9.3%;
+position:absolute;
+}
+h4{
+  left: 10%;
+  top:50%;
+  font-size:1cm;
+  position:absolute;
+  color:chartreuse;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: rgb(243, 243, 243);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1cm;
+}
