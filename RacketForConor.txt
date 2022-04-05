@@ -1,0 +1,23 @@
+#lang racket
+;; Joel sherin/21307504
+;;Bank loan with interest with time until the amount is paid fully paid
+
+(define function (lambda ( amount interest deduction) (if (< amount 0) #t #f)))
+(define monthly (lambda (X)(expt (* (/ X 100) 1 )(/ 1 12))))
+;i need to make  a line for when the money should be given eg. begining of the month or the end of the month.............
+;i also have a problem where my intresrt never ends and increases by 6 euro:
+
+(define newvalue( lambda (loan interest payment) ( * (- loan payment) interest)))
+(define time (lambda (loan interest payment) (if ( > (newvalue loan interest payment) loan) "You will not pay off your loan with that amount of payment"
+                                                 (if (<= (- loan payment) 0) 1 (+ (time (newvalue loan interest payment) interest payment) 1)))))
+
+; My list of data:
+(define loans '(1000 100 155522 'Error 1+5i 500000));the 3 list contain malform data
+(define rates '(1.06 1.03 1.02 'NotRate 1.075))
+(define payment '(100 2.5 3200 37500 -5))
+
+(define Loans (filter integer? loans))
+(define Rates (filter real? rates))
+(define Payment (filter positive? payment))
+
+(map time Loans Rates Payment);it takes  all the 3 lists first element in the coresponding element a nd tells how many months it will take to pay it off
